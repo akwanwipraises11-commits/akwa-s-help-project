@@ -4,14 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>help file</title>
+    <style>
+        /* Reset default body spacing and set a pleasant font */
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            background: #fff;
+            color: #111;
+        }
+
+        /* Top bar spanning full width with red -> black gradient */
+        .topbar {
+            width: 100%;
+            background: linear-gradient(90deg, #e53935 0%, #cbb9b9 50%, #000000 100%);
+            color: #fff;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .topbar .brand {
+            margin-left: 20px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            font-size: 1.1rem;
+        }
+
+        /* Center page content and constrain width for readability */
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .content p, .content ol {
+            margin: 1rem 0;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-    <p>hello i am Akwanwi Praises and i am doing this to help my short friend who probably knows what to do but still needs my help</p>
-    <p>Praises i don't blame u i blame but ur ignorance</p>
-    <ol>
-        <li> do this right</li>
-        <li> dont mess up oh</li>
-    </ol>
-    
+    <header class="topbar">
+        <div class="brand">Akwa's Help</div>
+    </header>
+
+    <main class="content">
+        <p>hello i am Akwanwi Praises and i am doing this to help my short friend who probably knows what to do but still needs my help</p>
+        <p>Praises i don't blame u i blame but ur ignorance</p>
+        <ol>
+            <li> do this right</li>
+            <li> dont mess up oh</li>
+        </ol>
+        <p> this is a new modification to this project</p>
+    </main>
+
 </body>
 </html>
